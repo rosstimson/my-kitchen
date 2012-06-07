@@ -3,13 +3,33 @@
 
 site 'http://community.opscode.com/api/v1'
 
-# cookbook 'chef-client'
+# Testing recipes
+cookbook 'chef_handler'
+cookbook 'minitest-handler',
+  git: 'git://github.com/btm/minitest-handler-cookbook.git'
+cookbook 'simple_cuke',
+  git: 'git://github.com/iafonov/simple_cuke.git'
 
-# cookbook 'apache2', '>= 1.0.0'
+# Base
+cookbook 'apt'
+cookbook 'build-essential'
+cookbook 'users'
+cookbook 'sudo'
+cookbook 'git'
+cookbook 'openssl'
+cookbook 'openssh'
+cookbook 'cron'
+cookbook 'xml'
+cookbook 'zlib'
+cookbook 'rsync'
 
-# cookbook 'rvm',
-#   :git => 'https://github.com/fnichol/chef-rvm'
+# Tools / apps
+cookbook 'zsh'
+cookbook 'tmux'
+cookbook 'vim'
 
-# cookbook 'postgresql',
-#   :git => 'https://github.com/findsyou/cookbooks',
-#   :ref => 'postgresql-improvements'
+# Databases
+cookbook 'sqlite'
+
+# Web server
+cookbook 'nginx'

@@ -1,2 +1,8 @@
+# Using Librarian-Chef to manage cookbooks.
 cookbooks
+
+# Only using Vagrant for testing.
+Vagrantfile
+.vagrant
+
 tmp
